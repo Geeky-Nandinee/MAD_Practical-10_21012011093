@@ -8,7 +8,8 @@ import android.widget.ArrayAdapter
 
 class PersonAdapter (context:Context, val PersonArray:ArrayList<Person> ):ArrayAdapter<Person>(context,0,PersonArray){
     override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
-       val view= LayoutInflater.from(context).inflate()
+       val view= LayoutInflater.from(context).inflate(R.layout.person_item,parent,false)
+        return view
     }
 
 }
