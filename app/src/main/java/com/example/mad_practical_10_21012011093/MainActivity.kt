@@ -22,8 +22,8 @@ class MainActivity : AppCompatActivity() {
             CoroutineScope(Dispatchers.IO).launch {
                 try {
                     val data = HttpRequest().makeServiceCall(
-                        "https://api.json-generator.com/templates/qjeKFdjkXCdK/data",
-                        "dchj8v1b6qqdjzbqood1jgpachyfzlw58r540gru")
+                        " https://api.json-generator.com/templates/qjeKFdjkXCdK/data",
+                        "rbn0rerl1k0d3mcwgw7dva2xuwk780z1hxvyvrb1")
                     withContext(Dispatchers.Main) {
                         try {
                             if(data != null)
@@ -55,19 +55,4 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-
-
-    fun setArraytoListView(){
-        val personList=findViewById<ListView>(R.id.Listview1)
-
-        val Array = arrayListOf<Person>(
-            Person("1","Nandinee","nklnkl","nklnkl","nllkl",90.90,909.90),
-            Person("2","abc","nklnkl","nklnkl","nllkl",90.90,909.90),
-            Person("3","def","nklnkl","nklnkl","nllkl",90.90,909.90),
-            Person("4","ghi","nklnkl","nklnkl","nllkl",90.90,909.90),
-            Person("5","nlnk","nklnkl","nklnkl","nllkl",90.90,909.90)
-        )
-        personList.adapter=PersonAdapter(this,Array)
-
-    }
 }
