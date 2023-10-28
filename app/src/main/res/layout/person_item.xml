@@ -22,7 +22,6 @@
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/button1"
-                style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
                 android:layout_width="56dp"
                 android:layout_height="50dp"
                 app:cornerRadius="28dp"
@@ -79,7 +78,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="16dp"
-                android:backgroundTint="#0000FF"
                 app:iconSize="30dp"
                 android:src="@drawable/baseline_location_on_24"
                 app:layout_constraintBottom_toBottomOf="parent"
